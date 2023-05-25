@@ -1,0 +1,130 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+	background-image: url("/src/imagens/dia.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	color: #5d4b7a;
+}
+
+body.modo-escuro {
+	background-image: url("/src/imagens/noite.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	color: #2a0d3b;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon{
+    background-color: #a491cf;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: #d2b6f3;
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #7360a0;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.voador{
+    background-color: #B0C4DE;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
